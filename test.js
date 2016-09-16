@@ -8,6 +8,8 @@ test('parse', function (t) {
   t.equal(parse('415-555-1234'), '4155551234')
   t.equal(parse('+1-415-555-1234'), '4155551234')
   t.equal(parse('415-555-12349'), '4155551234', 'truncate')
+  t.equal(parse('1234567891234', {truncate: false}), '1234567891234',
+    'dont truncate')
   t.end()
 })
 
@@ -27,5 +29,6 @@ test('validate', function (t) {
   var validate = phone.validate
   t.ok(validate('4155551234'))
   t.notOk(validate('415-555-1235'))
+  t.notOk(validate('12345678901'), 'more than 10 digits is invalid')
   t.end()
 })

@@ -1,4 +1,4 @@
-# phones [![Build Status](https://travis-ci.org/bendrucker/phones.svg?branch=master)](https://travis-ci.org/bendrucker/phones)
+# phones [![Build Status](https://travis-ci.org/bendrucker/phones.svg?branch=master)](https://travis-ci.org/bendrucker/phones) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/phones.svg)](https://greenkeeper.io/)
 
 > Parse, format, and validate US phone numbers
 
